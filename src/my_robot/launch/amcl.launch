@@ -14,6 +14,13 @@
 		<param name="initial_pose_x" value="0.0"/>
 		<param name="initial_pose_y" value="0.0"/>
 		<param name="initial_pose_a" value="0.0"/>
+		<param name ="odom_alpha1" value="0.001" />
+		<param name ="odom_alpha2" value="0.001" />
+		<param name ="odom_alpha3" value="0.001" />
+		<param name ="odom_alpha4" value="0.001" />
+		<param name ="laser_max_beams" value="100" />
+        <param name ="min_particles" value="50" />
+        <param name ="max_particles" value="500" />
 	</node>
 
     <node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
